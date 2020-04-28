@@ -1,0 +1,8 @@
+version: '3'
+services:
+  dev:
+    image: node:12
+    volumes:
+      - .:/usr/src/service
+    working_dir: /usr/src/service
+    command: npm start

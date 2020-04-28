@@ -1,0 +1,16 @@
+{
+    "name": "smart-product-demo-simulator",
+    "version": "0.0.1",
+    "description": "Smart Product Demo Simulator",
+    "main": "simulator.js",
+    "scripts": {
+        "start": "node simulator.js"
+    },
+    "dependencies": {
+        "aws-iot-device-sdk": "^2.2",
+        "colors": "*",
+        "dotenv": "^8.2.0",
+        "moment": "*",
+        "uuid": "*"
+    }
+}

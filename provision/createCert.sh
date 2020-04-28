@@ -30,7 +30,7 @@ cat ${DDIR}/deviceCert.crt \
 # Create the certificate package
 cp ${CADIR}/root.cert ${DDIR}/root.cert
 cd ${DDIR}
-tar czvf certs.tar.gz deviceCert.crt \
+tar czvf certs.tar.gz deviceCert.key \
     deviceCertAndCACert.crt \
     root.cert
 
