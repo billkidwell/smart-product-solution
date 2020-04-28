@@ -1,0 +1,19 @@
+# dependencies
+**/node_modules
+
+# misc
+**/npm-debug.log
+**/testem.log
+**/package-lock.json
+**/.vscode
+**.nyc_output
+**.pem
+certs
+
+# System Files
+**/.DS_Store
+
+# Outputs device information to this folder.
+# Includes sensitive information
+devices/**
+.env

@@ -21,6 +21,7 @@
 **/.vscode
 **.nyc_output
 **.pem
+certs
 
 # System Files
 **/.DS_Store

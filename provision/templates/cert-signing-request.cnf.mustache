@@ -1,0 +1,24 @@
+# OpenSSL configuration file for creating a CSR for an IOT Thing certificate
+# Once generated, run
+# openssl req -new -config myserver.cnf -keyout myserver.key -out myserver.csr
+# on the command line.
+
+# the fully qualified server (or service) name
+FQDN = {{serialNumber}}
+
+# the name of your organization
+# (see also https://www.switch.ch/pki/participants/)
+ORGNAME = {{organization}}
+
+# --- no modifications required below ---
+[ req ]
+default_bits = 2048
+default_md = sha256
+prompt = no
+encrypt_key = no
+distinguished_name = dn
+
+[ dn ]
+C = CH
+O = {{organization}}
+CN = {{serialNumber}}
